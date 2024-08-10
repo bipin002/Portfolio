@@ -181,20 +181,20 @@ background-repeat: no-repeat;
 
 .about-detail.show {
   opacity: 1;
-  transform: translateX(0); /* Slide into view */
+  transform: translateX(0);  /* Slide into view */
 }
 
 .about-section .about-img {
     flex: 1;
     min-width: 250px; /* Ensures the image has a minimum width */
-    height: 300px; /* Adjust height as needed */
+    height: 350px; /* Adjust height as needed */
     background-image: url('../resources/image/pexels-goumbik-296115.jpg');
     background-size: cover;
     background-position: center;
-    margin-right: 20px; /* Adds space between image and text */
+    margin-right: 50px; /* Adds space between image and text */
 }
 .about-section .about-detail {
-  flex: 2;   
+  flex: 1.5;   
   height: 300px;
   margin-left: 20px; /* Adds space between image and text */
 }
@@ -274,42 +274,85 @@ background-repeat: no-repeat;
 }
 
 .work-section{
-  padding: 30px 10px 30px;
-  margin: 30px 30px 30px;
+  padding: 30px 30px 130px;
+    margin: 30px 30px 30px;
 }
 
-.work-section .work-experience-text{
-  margin-bottom: 50px;
-}
+/* .work-section .work-experience-text{
+  margin-bottom: 20px;
+} */
 
-.work-section .work-experience-text h2{
-  text-align: center;
+.work-section  h2{
+  text-align: left;
+  margin-left: 50px;
 }
 
 .work-section .work-experience{
   display: flex;
+  flex-wrap: wrap;
+    padding: 0 50px;
+   
+    justify-content: center;
 }
 
 .work-experience .work-experience-img{
   flex: 0.5;
-}
-
-.work-experience .work-experience-left{
-  flex: 1;
-  
-}
-
-.work-experience .work-experience-img img{ 
   min-width: 250px; 
-  height: 200px;  
+  height: 300px;  
+  background-image: url('../resources/image/pexels-negativespace-160107.jpg');
   background-size: cover;
   background-position: center;
   margin-right: 90px; 
 }
 
-.work-experience .work-experience-left h3{
+.work-experience .work-experience-left{
+  flex: 1;
+  height: 300px;
+  margin-left: 20px; /* Adds space between image and text */
+}
+
+/* .work-experience .work-experience-img img{ 
+  min-width: 250px; 
+  height: 200px;  
+  background-image: url('../resources/image/pexels-negativespace-160107.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-right: 90px; 
+} */
+
+.work-experience .work-experience-left h3{  
   color: #a6b6f2;
-  margin-top: 0px;
+  font-size: 1.5em;
+  margin-top: 0px; 
+}
+
+.work-experience .work-experience-left h4{
+  color: #a6b6f2;  
+  margin-top: 0px;   
+  font-size: 1.2em;
+}
+.work-experience .work-experience-left h5{
+  color: #a6b6f2;
+  display: list-item;
+  margin-top: 0px; 
+  margin-left: 40px;
+  font-size: 1.2em;
+}
+
+.download-resume button{
+  
+  display: block;
+  margin: 100px auto;
+  background-color: rgb(207, 203, 203);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+   
+    text-align: center;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px){
