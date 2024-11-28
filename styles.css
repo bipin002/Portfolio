@@ -1,0 +1,231 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.icon-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.card {
+    border: none;
+} 
+
+.btn-primary, .btn-outline-primary {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+ /* General styles for the hero section */
+.hero-section {
+    /* background-image: url('Images/image/pexels-danbuilds-633409.jpg');  */
+    /* background-image: url('Images/image/background_img_dark.jpg'); */
+    background-image: url('Images/image/black_bg.png'); 
+    background-size: cover;
+    /* background-position: center; */
+    padding-top: 120px; /* Extra padding from top to position content near the bottom */
+    padding-bottom: 50px; /* Padding at the bottom */
+    min-height: 100vh; /* Full viewport height */
+    color: white; /* Default text color */
+}
+
+/* Ensure the container is centered and has padding */
+.hero-section .container {
+    margin-top: 150px;
+    /* max-width: 100%; */
+    padding: 0 15px;
+}
+
+/* Style for the main heading */
+.hero-section .display-10 {
+    font-size: 2rem; /* Adjust font size as needed */
+    line-height: 1.2; /* Adjust line height for spacing between lines */
+}
+
+/* Style for the paragraph */
+.hero-section p {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    color: white; /* Text color for the paragraph */
+    margin-top: 20px; /* Space above the paragraph */
+}
+
+/* Style for buttons */
+.hero-section .btn {
+    margin-top: 20px; /* Space between buttons and text */
+}
+
+#about .text-justify {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+#about .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#about .image-wrapper img {
+    border: 2px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .image-wrapper:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+#about .overlay {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#about .overlay-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#about .image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+/* Base style for the card */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow effects */
+    cursor: pointer; /* Pointer cursor to indicate the element is clickable */
+    border: 1px solid #ddd; /* Optional: border for card */
+    border-radius: 0.25rem; /* Optional: rounded corners for card */
+}
+
+/* Hover effect for the card */
+.hover-card:hover {
+    transform: scale(1.10); /* Slightly scale up the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to give depth */
+}
+
+/* Optional: Style for card image */
+.card img {
+    transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
+
+/* Optional: Hover effect for the image */
+.hover-card:hover img {
+    opacity: 0.8; /* Slightly reduce opacity of the image on hover */
+}
+/* Contact Section Styles */
+/* General section styling */
+.bg-dark {
+    background-color: #000 !important; /* Black background */
+}
+
+.text-light {
+    color: #fff; /* White text color */
+}
+
+.contact-message {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-media-box {
+    transition: transform 0.3s ease;
+}
+
+.social-media-box:hover {
+    transform: scale(1.05);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .hero-section {
+        /* background-image: url('Images/image/pexels-danbuilds-633409 (2).jpg'); */
+        background-position: center center;
+        background-size: cover;
+        /* padding-top: 80px;  */
+        min-height: 65vh; 
+        min-inline-size: auto;
+        min-width: auto;
+    }
+
+    .hero-section .display-10 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-section h2 {
+        font-size: 1.75rem; /* Adjust font size for mobile view */
+    }
+    
+    .hero-section p {
+        font-size: 0.9rem; /* Adjust paragraph size for mobile view */
+    }
+    
+    .hero-section .btn {
+        font-size: 0.9rem; /* Adjust button size for mobile view */
+    }
+
+    .d-md-none {
+        display: block; /* Show image above content on mobile */
+    }
+
+    .d-md-block {
+        display: none; /* Hide desktop image on mobile */
+    }
+
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%; /* Ensure two boxes per row on mobile */
+    }
+ 
+ .skills-section .col-md-4 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+}
+
+    .contact-message {
+        font-size: 1rem;
+    }
+    .social-icon {
+        width: 25px; 
+        height: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .text-justify {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
