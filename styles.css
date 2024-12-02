@@ -113,17 +113,77 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+/* for project detail card ----start */
+
+
+/* Card Styling */
+#projects .card {
+    background-color: #1c1c1c;
+    border: none;
+    color: #7361f7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+#projects .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #22a7f1;
+    margin-bottom: 15px; /* Space after title */
+}
+
+#projects .card-text {
+    flex-grow: 1; /* Allow the description to grow */
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 20px; /* Space after text */
+}
+
+#projects .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#projects .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Ensure cards are equal height */
+#projects .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Adjust margins and paddings */
+.mb-3 {
+    margin-bottom: 15px !important;
+}
+
+.mb-4 {
+    margin-bottom: 20px !important;
+}
+
+
+/* for project detail card ---end */
+
 /* Base style for the card */
-.card {
+#skills .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow effects */
     cursor: pointer; /* Pointer cursor to indicate the element is clickable */
-    border: 1px solid #ddd; /* Optional: border for card */
-    border-radius: 0.25rem; /* Optional: rounded corners for card */
+    border: none;
 }
 
 /* Hover effect for the card */
 .hover-card:hover {
-    transform: scale(1.10); /* Slightly scale up the card on hover */
+    transform: scale(1.05); /* Slightly scale up the card on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to give depth */
 }
 
@@ -227,5 +287,15 @@ h1, h2, h3, h4, h5, h6 {
 
     h2 {
         font-size: 2rem;
+    }
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
     }
 }

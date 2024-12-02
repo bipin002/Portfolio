@@ -19,7 +19,8 @@
             --accent-foreground: hsl(60, 0%, 100%);
             --muted: hsl(240, 5%, 25%);
             --muted-foreground: hsl(60, 5%, 85%);
-            --card: hsl(240, 4%, 10%);
+            /* --card: hsl(240, 4%, 10%); */
+            --card:hsl(0deg 0.63% 12.67%);
             --card-foreground: hsl(60, 5%, 90%);
             --radius: 0.5rem;
         }
@@ -73,7 +74,8 @@
 
         .card {
             background-color: var(--card);
-            color: var(--card-foreground);
+            /* color: var(--card-foreground); */
+            color:#22a7f1;
             border-radius: var(--radius);
         }
 
@@ -201,43 +203,41 @@
 
 <hr>
 <!-- Projects Section -->
- <section id="projects" class="section bg-muted">
+<section id="projects" class="section bg-muted">
     <div class="container">
         <h2 class="h3 text-center mb-5">My Projects</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <!-- <img src="/placeholder.svg" class="card-img-top" alt="Project 1"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">ASP.NET Core MVC Web Application</h5>
-                        <p class="card-text">A web application built using ASP.NET Core MVC, C#, JavaScript, and SQL Server.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-3">ASP.NET Core MVC Web Application</h5>
+                        <p class="card-text mb-4">A web application built using ASP.NET Core MVC, C#, JavaScript, and SQL Server.</p>
+                        <a href="#" class="btn btn-primary mt-auto align-self-start">View Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <!-- <img src="/placeholder.svg" class="card-img-top" alt="Project 2"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript Interactive Dashboard</h5>
-                        <p class="card-text">An interactive dashboard developed using JavaScript and jQuery for dynamic data visualization.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-3">JavaScript Interactive Dashboard</h5>
+                        <p class="card-text mb-4">An interactive dashboard developed using JavaScript and jQuery for dynamic data visualization.</p>
+                        <a href="#" class="btn btn-primary mt-auto align-self-start">View Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <!-- <img src="/placeholder.svg" class="card-img-top" alt="Project 3"> -->
-                    <div class="card-body">
-                        <h5 class="card-title">MySQL Database Management System</h5>
-                        <p class="card-text">A robust database management system developed using MySQL, with advanced querying and data management features.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-3">MySQL Database Management System</h5>
+                        <p class="card-text mb-4">A robust database management system developed using MySQL, with advanced querying and data management features.</p>
+                        <a href="#" class="btn btn-primary mt-auto align-self-start">View Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
  <hr> 
 <!-- Skills Section -->
 <section id="skills" class="section">
