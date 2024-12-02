@@ -170,7 +170,11 @@ h1, h2, h3, h4, h5, h6 {
 .mb-4 {
     margin-bottom: 20px !important;
 }
-
+ 
+#techId{
+    color: #22a7f1;
+    font-style: italic;
+}
 
 /* for project detail card ---end */
 
