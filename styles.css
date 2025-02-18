@@ -2,7 +2,49 @@
 body {
     font-family: Arial, sans-serif;
 }
+body.light-theme {
+    background-color: #ffffff;
+    color: #22a7f1;
+}
 
+body.light-theme .card {
+    background-color: #ebebeb;
+    color: #22a7f1;
+}
+.theme-toggle-btn {
+    background: none !important; /* Remove background */
+    border: none !important; /* Remove border */
+    padding: 0 !important; /* Remove padding */
+    box-shadow: none !important; /* Remove box shadow */
+    outline: none !important; /* Remove focus outline */
+}
+
+.theme-toggle-btn i {
+    display: inline-block;
+    line-height: 1;
+}
+body.light-theme #theme-text{
+    color: #22a7f1;
+}
+#theme-text{
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position at the top of the page */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure the header stays above other content */
+    background-color: var(--background); /* Match the background color */
+    box-shadow: 0px 4px 10px rgba(168, 168, 168, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+body.light-theme .header{
+    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.3);
+}
 .avatar img {
     width: 40px;
     height: 40px;
@@ -13,23 +55,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-muted {
-    color: #6c757d !important;
+    color: #22a7f1 !important;
 }
 
 .icon-placeholder {
     width: 40px;
     height: 40px;
-    background-color: #007bff;
+    background-color: #22a7f1;
     border-radius: 50%;
 }
 
 .card {
     border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 } 
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 .btn-primary, .btn-outline-primary {
     padding: 10px 20px;
     border-radius: 30px;
+}
+body.light-theme .header {
+    background-color: white;
+}
+body.light-theme .header h1 {
+    color: #22a7f1;
+}
+body.light-theme .header  .nav-link {
+    color: #22a7f1;
+}
+body.light-theme  .btn-primary {
+    background-color: white;
+    color: #22a7f1;
+    border: groove;
+}
+body.light-theme  .btn-secondary {
+    background-color: white;
+    color: #22a7f1;
+    border: groove;
+}
+body.light-theme .offcanvas{
+    color: #22a7f1;
+
 }
 
  /* General styles for the hero section */
@@ -43,7 +115,21 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 50px; /* Padding at the bottom */
     min-height: 100vh; /* Full viewport height */
     color: white; /* Default text color */
+    
+    padding: 100px 0;
 }
+body.light-theme .hero-section {
+    background-image: none; /* Remove background image in dark theme */
+    background-color: white; /* Optional: Add a solid background color */
+    color: #000;
+}
+body.light-theme .hero-section h2 {   
+    color: #22a7f1;
+}
+body.light-theme .hero-section p{
+    color: #22a7f1;
+}
+
 
 /* Ensure the container is centered and has padding */
 .hero-section .container {
@@ -113,6 +199,21 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+body.light-theme #about{
+    background-image: none; /* Remove background image in dark theme */
+    background: rgb(239 238 236); /* Optional: Add a solid background color */
+    color: #000;
+}
+body.light-theme #about h2 {
+    color: #22a7f1;
+}
+body.light-theme #about h4 {
+    color: #22a7f1;
+}
+body.light-theme #about p {
+    color: #22a7f1;
+}
+
 /* for project detail card ----start */
 
 
@@ -175,6 +276,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #22a7f1;
     font-style: italic;
 }
+body.light-theme #projects  .card{
+    background-image: none; /* Remove background image in dark theme */
+    background: #fdf5f5; /* Optional: Add a solid background color */
+    color: #000;
+}
 
 /* for project detail card ---end */
 
@@ -205,11 +311,37 @@ h1, h2, h3, h4, h5, h6 {
 .bg-dark {
     background-color: #000 !important; /* Black background */
 }
+body.light-theme #skills {
+    background-color: rgb(243, 242, 237);
+}
+body.light-theme #skills  .card{
+    background-color: #e0dfdf;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
 .text-light {
     color: #fff; /* White text color */
 }
 
+body.light-theme .text-light{
+    color: #22a7f1;
+}
+body.light-theme .bg-dark {
+    --bs-bg-opacity:0.07;
+    background-color: white; /* Optional: Add a solid background color */
+}
+body.light-theme #contact h2 {
+    color: #22a7f1;
+}
+body.light-theme #contact .contact-message{
+    color: #22a7f1;
+}
+body.light-theme #contact  .card{
+    background-color: #e0dfdf;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 .contact-message {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -228,8 +360,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 20px;
     margin-bottom: 0.5rem;
 }
+.social-media-box img {
+    transition: transform 0.3s ease;
+}
 
-
+.social-media-box:hover img {
+    transform: scale(1.2);
+}
+body.light-theme .footer{
+    background-color: #ffffff;
+}
+body.light-theme .footer p{
+    color: #22a7f1;
+}
 /* Responsive adjustments */
 @media (max-width: 767px) {
     .hero-section {
