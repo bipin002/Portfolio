@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+.h5{
+    font-family: cursive;
+    font-style: italic;
+}
 .text-muted {
     color: #22a7f1 !important;
 }
@@ -103,12 +107,26 @@ body.light-theme .offcanvas{
     color: #22a7f1;
 
 }
+body.dark-theme .offcanvas{
+    background-color: #000;
+}
+body.dark-theme #offcanvasNavbarLabel{
+    color: #ffffff;
+}
+body.light-theme .offcanvas-body a{
+    color: #22a7f1;
+}
+body.dark-theme .offcanvasClosebtn{
+    background-color: #ffffff;
+}
 
  /* General styles for the hero section */
 .hero-section {
     /* background-image: url('Images/image/pexels-danbuilds-633409.jpg');  */
     /* background-image: url('Images/image/background_img_dark.jpg'); */
-    background-image: url('Images/image/black_bg.png'); 
+    /* background-image: url('Images/image/black_bg.png');   */
+    background-image: url('Images/image/hero_Dark_Theme.jpg');  
+    
     background-size: cover;
     /* background-position: center; */
     padding-top: 120px; /* Extra padding from top to position content near the bottom */
@@ -118,8 +136,9 @@ body.light-theme .offcanvas{
     
     padding: 100px 0;
 }
+
 body.light-theme .hero-section {
-    background-image: none; /* Remove background image in dark theme */
+    background-image:url('Images/image/hero_White_Theme.jpg');  ; /* Remove background image in dark theme */
     background-color: white; /* Optional: Add a solid background color */
     color: #000;
 }
@@ -136,6 +155,8 @@ body.light-theme .hero-section p{
     margin-top: 150px;
     /* max-width: 100%; */
     padding: 0 15px;
+    position: relative;
+    z-index: 2; /* Ensure content is above the background */
 }
 
 /* Style for the main heading */
@@ -143,18 +164,49 @@ body.light-theme .hero-section p{
     font-size: 2rem; /* Adjust font size as needed */
     line-height: 1.2; /* Adjust line height for spacing between lines */
 }
-
+.display-10::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:white;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+  }
+  h2.display-10::after {
+    height:24px;
+    width:13px;
+  }
+ 
+ 
 /* Style for the paragraph */
 .hero-section p {
     font-size: 1.25rem; /* Adjust font size as needed */
     color: white; /* Text color for the paragraph */
     margin-top: 20px; /* Space above the paragraph */
 }
-
+.hero-section p.display-10::after {
+    height:13px;
+    width:6px;
+  }
 /* Style for buttons */
 .hero-section .btn {
     margin-top: 20px; /* Space between buttons and text */
 }
+@keyframes blink {
+    0% {
+      opacity:1;
+    }
+    49% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+  }
 
 #about .text-justify {
     line-height: 1.6;
@@ -377,7 +429,8 @@ body.light-theme .footer p{
 @media (max-width: 767px) {
     .hero-section {
         /* background-image: url('Images/image/pexels-danbuilds-633409 (2).jpg'); */
-        background-position: center center;
+        /* background-position: center center; */
+        background-position: right;
         background-size: cover;
         /* padding-top: 80px;  */
         min-height: 65vh; 
@@ -425,6 +478,11 @@ body.light-theme .footer p{
     .social-icon {
         width: 25px; 
         height: 25px;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 75% !important; /* Set width to 60% of the screen */
+        /* max-width: 400px;  */
     }
 }
 @media (max-width: 768px) {

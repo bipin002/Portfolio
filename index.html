@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/amore" rel="stylesheet">
     <style>
         :root {
-            --background: hsl(240, 5%, 6%);
+            --background: hsl(0deg 0% 0%);
             --foreground: hsl(60, 5%, 90%);
             --primary: hsl(0, 0%, 90%);
             --primary-foreground: hsl(60, 0%, 0%);
@@ -97,7 +98,7 @@
 <header class="header py-2 px-4">
     <div class="container d-flex align-items-center justify-content-between" style="max-width: 1200px;">
         <div class="d-flex align-items-center">
-            <img src="Images/image/programming.png" alt="Bipin Mistry" class="rounded-full" style="width:40px; height: 40px;">
+            <img id="logo" src="Images/image/white_logo.png" alt="Bipin Mistry" class="rounded-full" style="width:40px; height: 40px;">
             <div class="ms-3">
                 <h1 class="h5 m-0">Bipin Mistry</h1>
                 <!-- <p class="text-muted m-0">.NET Developer with 4+ Years of Experience</p> -->
@@ -128,7 +129,7 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
     <div class="offcanvas-header">
         <h5 id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close offcanvasClosebtn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
         <nav class="nav flex-column">
@@ -158,19 +159,24 @@
         </div>
     </div>
 </section> -->
-<section id="home" class="section hero-section">
+<section id="home" class="section hero-section">   
     <div class="container text-center text-md-start">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <h2 class="display-10">Hi,
-                </br>I'm Bipin Mistry
-                </br>Software Developer</h2>
-                <p>Dot Net Developer / SQL Developer / Frontend Developer</p>
+                <div class="output" id="output">               
+                <h2 class="display-10"></h2>
+                <p></p>
+                <!-- <h2 class="display-10">Hi,
+                </br><span class="MyName">I'm Bipin Mistry
+                </br>Software Developer</span></h2>
+                <p>Dot Net Developer / SQL Developer / Frontend Developer</p> -->
                 <!-- <h2 class="display-6">Hello, I'm Bipin Mistry</h2>
                 <p class="text-white">I'm a passionate .NET Developer with over 4 years of experience in building modern web applications. I have expertise in ASP.NET, ASP.NET MVC, ASP.NET Core MVC, C#, jQuery, JavaScript, SQL Server, MySQL, and GitHub.</p> -->
+            </div>
                 <button class="btn btn-primary me-2" id="downloadresume">Download Resume</button>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
+           
         </div>
     </div>
 </section>
@@ -455,7 +461,8 @@
           <div class="card text-center social-media-box">
             <div class="card-body" id="LinkedInID">
               <!-- <a href="https://www.linkedin.com/in/bipin-mistry/" target="_blank" rel="noopener noreferrer"> -->
-                <img src="Images/image/icons8-linkedin-96.png" alt="LinkedIn" class="mb-3">
+                <!-- <img src="Images/image/icons8-linkedin-96.png" alt="LinkedIn" class="mb-3"> -->
+                <img  id="LinkedID" src="Images/image/linkedin (5).png" alt="LinkedIn" class="mb-3">
                 <!-- <h5 class="card-title">LinkedIn</h5> -->
               </a>
             </div>
@@ -465,7 +472,7 @@
           <div class="card text-center social-media-box">
             <div class="card-body" id="githubID">
               <!-- <a href="https://github.com/bipin-mistry" target="_blank" rel="noopener noreferrer"> -->
-                <img src="Images/image/icons8-github-96.png" alt="GitHub" class="mb-3">
+                <img id="gitID" src="Images/image/github-sign (1).png" alt="GitHub" class="mb-3">
                 <!-- <h5 class="card-title">GitHub</h5> -->
               </a>
             </div>
@@ -475,7 +482,8 @@
           <div class="card text-center social-media-box">
             <div class="card-body" id="gmailID">
               <!-- <a href="mailto:mistrybipin002@gmail.com"> -->
-                <img src="Images/image/icons8-gmail-96.png" alt="_blank" class="mb-3">
+                <!-- <img src="Images/image/icons8-gmail-96.png" alt="_blank" class="mb-3"> -->
+                <img id="emailID" src="Images/image/email.png" alt="_blank" class="mb-3">
                 <!-- <h5 class="card-title">Email</h5> -->
               </a>
             </div>
@@ -484,7 +492,8 @@
          <div class="col-md-2 mb-2">
           <div class="card text-center social-media-box">
             <div class="card-body" id="WhatsappID">             
-                <img src="Images/image/icons8-whatsapp-96.png" alt="Email" class="mb-3">
+                <!-- <img src="Images/image/icons8-whatsapp-96.png" alt="Email" class="mb-3"> -->
+                <img id="WhatsID" src="Images/image/whatsapp (2).png" alt="Email" class="mb-3">
                 
               </a>
             </div>
@@ -510,6 +519,7 @@
 <script src="js/download_resume.js"></script>
 <script src="js/side_menu_close.js"></script>
 <script src="js/darktheme.js"></script>
+<script src="js/Introduction_Animation.js"></script>
 
 </body>
 </html>
