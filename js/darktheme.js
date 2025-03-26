@@ -28,7 +28,7 @@ function setTheme(isDark) {
     if (isDark) {
         body.classList.add('light-theme');
         body.classList.remove('dark-theme');           
-        LogoIcon.src='Images/image/white_Logo.png';
+        LogoIcon.src='Images/image/white_logo.png';
         themeIcon.src = 'Images/image/moon.png'; // Moon image for dark mode
         // themeText.innerHTML='Light On';
         LinkInIcon.src='Images/image/linkedin (5).png';
@@ -38,7 +38,7 @@ function setTheme(isDark) {
     } else {       
         body.classList.add('dark-theme');
         body.classList.remove('light-theme');       
-        LogoIcon.src='Images/image/Black_logo.png';
+        LogoIcon.src='Images/image/Black_Logo.png';
         themeIcon.src = 'Images/image/sun.png'; // Sun image for light mode 
         // themeText.innerHTML='Light Off';  
         themeIcon.style='height: 24px;';
